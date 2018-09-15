@@ -27,8 +27,14 @@
 import AppLogo from '~/components/AppLogo.vue'
 
 export default {
+  asyncData({params}) {
+    console.log(params)
+  },
   components: {
     AppLogo
+  },
+  created(){
+    console.log("111")
   }
 }
 </script>
